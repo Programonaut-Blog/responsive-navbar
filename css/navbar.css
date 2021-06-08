@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    /* to see that the navbar is sticky */
+    height: 200vh; 
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,104,255,1) 100%); 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font: bold 22px sans-serif;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+.navbar {
+    /* make it stick */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* in front of all other elements */
+    z-index: 99;
+    /* set background */
+    background-color: white;
+    padding: 10px 5%;
+
+    /* define flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    display: block;
+    height: 48px
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 10px;
+}
