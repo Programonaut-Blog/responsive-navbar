@@ -49,3 +49,51 @@ a:hover {
     display: inline-block;
     margin-left: 10px;
 }
+
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 4px auto;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .menu-item {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        text-align: end;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 5%;
+    }
+
+    .menu-icon:hover .bar {
+        background-color: darkcyan;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+    
+    .active {
+        display: block;
+    }
+}
